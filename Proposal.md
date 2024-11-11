@@ -21,7 +21,7 @@ Integrantes
 * [frontend app](https://github.com/AlexBirch123/Rio-Color-Pintureria---Frontend-/tree/master)
 
 
-* [backend app](https://github.com/jonibattista/Pintureria-Front)
+* [backend app](https://github.com/jonibattista/Pintureria-Back-main/tree/master)
 
 
 <hr>

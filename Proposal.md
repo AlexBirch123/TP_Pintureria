@@ -54,7 +54,7 @@ Alcance Funcional
 <table>
     <tbody>
         <tr>
-            <th rowspan="4">CRUD SIMPLE</th>
+            <th rowspan="7">CRUD SIMPLE</th>
             <td>CRUD Sucursal</td>
         </tr>
         <tr>
@@ -66,26 +66,44 @@ Alcance Funcional
         <tr>
             <td>CRUD Producto</td>
         </tr>
+         <tr>
+            <td>CRUD Empleado</td>
+        </tr>
+         <tr>
+            <td>CRUD Proveedor</td>
+        </tr>
+     <tr>
+            <td>CRUD Categoria</td>
+        </tr>
         <tr>
             <th rowspan="2">CRUD DEPENDIENTE</th>
-            <td>CRUD Venta {depende de} CRUD Producto</td>
+            <td>CRUD Venta {depende de} CRUD Producto , CRUD usuario , CRUD Cliente, CRUD Empleado</td>
         </tr>
         <tr>
             <td>CRUD Renglon {depende de} CRUD Venta</td>
         </tr>
         <tr>
         <tr>
-            <th rowspan="4">LISTADO + DETALLE</th>
-            <td>Listado de productos filtrado por descripcion de producto, muestra producto y precio => detalle CRUD Producto</td>
+            <th rowspan="7">LISTADO + DETALLE</th>
+            <td>Listado de productos filtrado por titulo de producto,codigo SKU, proveedor o categoria , muestra producto, precio y una previsualizacion para muestra al publico => detalle CRUD Producto</td>
         </tr>
         <tr>
             <td>Listado de ventas filtrado por rango de fecha, muestra venta, cliente, id de venta y total => detalle muestra datos completos de la venta, cliente, renglones .</td>
         </tr>
         <tr>
-            <td>Listado de clientes, muestra datos cliente => CRUD Cliente</td>
+            <td>Listado de clientes, muestra datos cliente, filtrado por nombre o dni=> CRUD Cliente</td>
         </tr>
       <tr>
-            <td>Listado de sucursales, muestra datos sucursales => CRUD Sucursal</td>
+            <td>Listado de sucursales, muestra datos sucursales, filtrado por direccion y telefono => CRUD Sucursal</td>
+        </tr>
+     <tr>
+            <td>Listado de empleado, muestra datos empleado, filtrado por direccion, telefono y nombre => CRUD Empleado</td>
+        </tr>
+     <tr>
+            <td>Listado de proveedores, muestra datos proveedor, filtrado por cuit, telefono y nombre => CRUD Proveedor</td>
+        </tr>
+     <tr>
+            <td>Listado de usuarios, muestra datos usuario, filtrado por email, username y role => CRUD Usuario</td>
         </tr>
         <tr>
             <th rowspan="7">CUU/EPIC</th>
@@ -109,9 +127,12 @@ Alcance Funcional
       <tr>
             <td>crear usuario.</td>
         </tr>
+     <tr>
+            <td>Usuario realiza compra por carrito</td>
+        </tr>
         <tr>
             <th>OTROS</th>
-            <td>Envío de correo al cliente cuando realiza la compra.</td>
+            <td>Enviar mail de recuperacion de cuenta al usuario</td>
         </tr>
     </tbody>
 </table>
